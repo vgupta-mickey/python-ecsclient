@@ -21,14 +21,13 @@ with open('README.rst', 'r') as f:
     readme = f.read()
 
 setup(
-    name='python-ecsclient',
-    url='https://github.com/EMCECS/python-ecsclient',
+    name='python-ecsclient-vkgupta73',
+    url='https://github.com/vgupta-mickey/python-ecsclient',
     keywords=['ecsclient'],
-    long_description=readme,
     version=read('VERSION')[0],
     description='A library for interacting with the ECS Management API',
     author='ECS',
-    author_email='ecs@dell.com',
+    author_email='vinod.gupta@dell.com',
     tests_require=read('./test-requirements.txt'),
     install_requires=read('./requirements.txt'),
     test_suite='nose.collector',

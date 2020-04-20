@@ -9,21 +9,12 @@ install:
 - pip install tox-travis
 script: tox
 deploy:
-- provider: pypi
-  distributions: sdist
-  user: adrianmo
-  password:
-    secure: "WPFk4enKQpiCiRWPyk5GO1lLsvggqZRc2Ya3UVOOYomhPwlS3bzFehUvs+NK5cdZM9zdpE1nZPEG6l0+T2NVwfq9ENm24TFv6c2cqzGU3SGe3zDDK+iEO+Ksk/x8kPv3ZIMRvJ4b+OZbJQWa0u8t80p/jonf4vv59mvtdxj6RlOEK2aROzf1f7WFa5DHsIzQzPMZaU3S7xoz2vq5T6kbI4no+a++TIipkfjZ9lZe0jw265DFFR+E3lCEGUsYnZoEPUBXssdFCUW8A1Fx1LjEgX+kOBbvcY1Y3tvuK+E/tsx86abc01l9mT7A79pR2O/J6VMDdC2vPT8Tda4irDz1SgoAtatTqklCrpzn/WT44tHUut2V2MoPE5HUECPL3ox61PbDTjeEWgrLDCVM6tYGbKsdYu2KNc/hsfjDo4eiI21E2LO7oKzANVOpWjXSE7m7HmASIxba9OwlhsK47JirKn6WGlDB6z38K/qvz5c7qBPY2u0N7N1TxqTAFNdzoLCpEv6jji2k7zJPD8LRBoPDiPyYycx8F+tr9i1eUSPnrLAqB3+WJqwIW89KJDZ1asc1W4I6LsYyWJrzET7y0+swhj9KIdsjl4lnpYwOy9aCtV/meWyQ9is9MoAKDOA6Dbrvatz5OW8wbkWFoDnQhB0/OLLYsfVb6xBO0MCHw9hJmjw="
-  on:
-    tags: true
-    python: 3.6
-  skip_cleanup: true
-- provider: pypi
+  provider: pypi
   distributions: sdist
   server: https://test.pypi.org/legacy/
-  user: adrianmo
+  user: __token__ 
   password:
-    secure: "NYPdcAwr02pKWFP74ARGMzqprcZyVgdensMUBaXt59E/Ivtx6XoXmONsVg9go0JrMzFiVmtHah4W0anBB3BZ2ASaDYOg/M/BimBSmBi0D/G3Mb8hcZ7lYYSEMh+o+zHg/5fOjYQxrv9G/ekPbXJgD1gz4wbx8w9n1rZsUOsQgSRukXHNr5wDVO6NRpsuaidJAi7f6ZNsPq8RY6m+6JSZhHj50LicRcN5W93FLs5bjyES/QWXuwbVgXw8g360E8E0XT/5OElyXjHM3zoz8IOZHR8eKMmekM5B1U3CGXXv5nQfXCkw7RewgYLRYrA9C8hOxCb18+/Hn8oU76LTbA0fOpyOaNKXTfrchwmRc9E4EQxjJT39gJofqdWokJJDqzcTmHeDRApTmnGd/bV1bNtKXj9oSP8JdEKviz3qAFDTQdLCEp97CxgCRjRqNshbvF83TVwEVur/VKn8FNUZ4Re435JnZz4j6CNUGJIaWLE9RaNRbpjO8mUPq/iQ3cxLVhcT5n8QGyEt5SQX6Mcl+2dHBuCEbKpJBJAT2SVtDk5dwHdTOk9NH7dYEMLuygPtjPQFrTUFhE3RqZZJbyHFYYgnG8al+iwmwxTQOuH3P8Cz1I1n1H3y0Dc+573atnOXG3LoyUZ2PGFxC4eEGJkHa8DyMcuHjsEEEA3BWEg5MiSiVrw="
+    secure: DJUp7K7eL1EfeYwigb/G0/Dxr1du+eYz9JF7x01A5BYfrPn6xV6CQMa6hKG/tZ5MYE/jHgbkQ/r3KMJ26p9FttHhEzsR0oYi3e05lcSy/4bAc87VvrIpiF5J8a0hlRUxsad9oal4WmBAkJS3d5yE/hW2eHPWEAJJgaVKGswmeTxUywwdv6Bui12gpFJINqRXadnuQBmwvnQevNzaISPdNtudr9qUbb+161O4jQH/BnZa+yaCkZx7K5gICu92Xx4V5aYbv+5VNledX2mBc5b/RH/fnNPP3WwUag+D9Mle5a6s+MqEdgEhhYgFVRNNEjhciE7stZeV99hulzcYo/QZ3kOz7QThqpE0uRd8JEuX5+lFE+B6qoS1Awh+XO6fg9gVbzawvy4XxF8cFRBBMXMIXa2nHjAJJxvS0hNTBTkauiei2bcS7SX/iNfHbm9EU9mcrDjzClCC52mh9em224E0gA9ZX29//NgdB1EfA+n+jVAhGjgPdYUeVQNkCeDsaXUaPEacs02QlNSXemAL4G4XT/wxHdVdFG3biMfs6N0SM+UpzRjr9ZEYnt6DHiOu0en/ibhv4J8to9xO6xXryNG0dy/6lwRT5nxkmOOhl+TwlJxemOdOkyTI1ltbYq0eB9nW7AUWjjKcv6diOxQk9W7f5ZKyEjUvwnfZEyyfJ3Ymk5Y=
   on:
     branch: master
     tags: false
